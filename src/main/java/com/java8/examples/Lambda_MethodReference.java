@@ -17,7 +17,15 @@ public class Lambda_MethodReference {
             System.out.println(value);
         }*/
 
+        // Anonymous class
+        /*list.forEach(new Consumer<Integer>() {
+            @Override
+            public void accept(Integer integer) {
+                System.out.println(integer);
+            }
+        });*/
+
         // Method Interface
-        list.forEach(System.out::println);
+        //list.forEach(System.out::println);
     }
 }
