@@ -26,6 +26,6 @@ public class Lambda_MethodReference {
         });*/
 
         // Method Interface
-        //list.forEach(System.out::println);
+        list.forEach(System.out::println);
     }
 }
