@@ -24,5 +24,16 @@ public class StreamExample1 {
         personList.add(new Person("a",21));
         personList.add(new Person("a",11));
         personList.stream().filter(p -> p.getAge() > 20).forEach(System.out::println);
+
+        Stream<Integer> integerStream  = Stream.of(1,2,3,4,5,6,7);
+        List<Integer> resultList = new ArrayList<>();
+
+        integerStream.
+                peek(System.out::println)
+                .filter(p -> p>5)
+                .peek(resultList::add)
+                .forEach(System.out::println);
+        System.out.println(resultList.size());
+
     }
 }
